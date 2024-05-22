@@ -47,6 +47,9 @@ curl -X GET "https://example.org/wp-json/aggregate-thumbnail-images/v1/tag/1" -H
 ## Goals
 - Make those images or allow WordPress users to compose images for tags and categories or both
 - In other words, make that `file_exists` be able to return `true` and mean it.
+- Assess security implications
+- Assess performance implications
+- Assess usability
 - Add some unit testing
 
 ## Potential directions

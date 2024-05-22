@@ -62,3 +62,6 @@ curl -X GET "https://example.org/wp-json/aggregate-thumbnail-images/v1/tag/1" -H
 ## Want to help?
 - Feel free to fork and submit a PR
 - Have a suggestion? Open an issue
+
+## Contributors
+- [Joe Crawford](https://artlung.com/)

@@ -56,6 +56,8 @@ curl -X GET "https://example.org/wp-json/aggregate-thumbnail-images/v1/tag/1" -H
 ```
 
 ## History
+
+### 1.0.0: 
 - Initial version provides an endpoint under the WP REST API to get the available featured images for categories or tags.
 - Added a shell script to consume the api and generate the image based on the output.
 

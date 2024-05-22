@@ -7,7 +7,7 @@ Description: Provides REST endpoint to get a list of images for a category or ta
              TODO actually generate these aggregate images to serve as a featured image
              TODO could also be used to generate image for og:image
              TODO provide a dashboard to see what images exist and help a user composer create them
-Version: 0.5
+Version: 1.0.0
 Author: artlung
 Author URI: http://artlung.com
 License: GPL2

@@ -5,7 +5,7 @@
 WordPress Plugin to expose images based on tag or category. This plugin is intended to be used by themes or other plugins to provide a visual representation of tags and categories.
 
 ## The Issue
-Tags and Images don't have a default visual identity, it would be nice to have a visual representation of the tags and images for usage in CSS or maybe for usage of `og:image`
+Tags and Images don't have a default visual identity, it would be nice to have a visual representation of the tags and images for usage in CSS or maybe for usage of `og:image`  based on the [Featured Images](https://codex.wordpress.org/Post_Thumbnails) for the posts in that category.
 
 ## Usage
 - Install the plugin
@@ -53,6 +53,7 @@ curl -X GET "https://example.org/wp-json/aggregate-thumbnail-images/v1/tag/1" -H
 - Add some unit testing
 
 ## Potential directions
+- Add a way to do this for a page based on child pages featured images
 - Add a way to add a logo to the images
 - Add a way to add a background image to the images
 - Add a way to add a gradient to the images

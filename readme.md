@@ -12,7 +12,7 @@ Tags and Images don't have a default visual identity, it would be nice to have a
 - Access the endpoint at `/wp-json/aggregate-thumbnail-images/v1/category/{id}` or `/wp-json/aggregate-thumbnail-images/v1/tag/{id}` where `{id}` is the ID of the category or tag.
 - Access the endpoint at `/wp-json/aggregate-thumbnail-images/v1/categoryByName/{name}` or `/wp-json/aggregate-thumbnail-images/v1/tagByName/{name}` where `{name}` is the name of the category or tag.
 
-# Example response:
+## Example response:
 ```json
 {
   "images": [
@@ -40,6 +40,12 @@ Tags and Images don't have a default visual identity, it would be nice to have a
 - Make those images or allow WordPress users to compose images for tags and categories or both
 - In other words, make that `file_exists` be able to return `true` and mean it.
 - Add some unit testing
+
+## Potential directions
+- Add a way to add a logo to the images
+- Add a way to add a background image to the images
+- Add a way to add a gradient to the images
+- Add a way to add a pattern to the images
 
 ## Want to help?
 - Feel free to fork and submit a PR

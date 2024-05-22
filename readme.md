@@ -1,5 +1,9 @@
 # Aggregate Thumbnail Images
 
+## Description
+
+WordPress Plugin to expose images based on tag or category. This plugin is intended to be used by themes or other plugins to provide a visual representation of tags and categories.
+
 ## The Issue
 Tags and Images don't have a default visual identity, it would be nice to have a visual representation of the tags and images for usage in CSS or maybe for usage of `og:image`
 

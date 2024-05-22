@@ -11,6 +11,11 @@ WordPress Plugin to expose images based on tag or category. This plugin is inten
 A shell script `aggregate-thumbnail-images.sh` is provided to create a thumbnail images based on the API output
 - `chmod +x aggregate-thumbnail-images.sh`
 - `./aggregate-thumbnail-images.sh --taxonomy=tag --name=swimming` will generate the image wherever you invoke the script.
+- Requirements
+- - `bash` for running the script
+- - `jq` for parsing JSON
+- - `curl` for making HTTP requests
+- - `convert` from ImageMagick for image manipulation
 
 ## The Issue
 Tags and Images don't have a default visual identity, it would be nice to have a visual representation of the tags and images for usage in CSS or maybe for usage of `og:image`  based on the [Featured Images](https://codex.wordpress.org/Post_Thumbnails) for the posts in that category.

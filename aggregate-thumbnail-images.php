@@ -199,13 +199,6 @@ class AggregateThumbnailImages {
 }
 
 
-// access it at /wp-json/aggregate-thumbnail-images/v1/category/1
-// access it at /wp-json/aggregate-thumbnail-images/v1/tag/1
-// access it at /wp-json/aggregate-thumbnail-images/v1/categoryByName/uncategorized
-// access it at /wp-json/aggregate-thumbnail-images/v1/tagByName/uncategorized
-// returns an array of images if available
-// returns a filename if available
-// TODO make the thing really create and save an aggregate image based on the filename
 add_action( 'rest_api_init', function () {
     register_rest_route( AggregateThumbnailImages::route_namespace, '/category/(?P<id>\d+)', array(
         'methods' => 'GET',

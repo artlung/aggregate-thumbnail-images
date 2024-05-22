@@ -1,12 +1,9 @@
-## Aggregate Thumbnail Images
+# Aggregate Thumbnail Images
 
-# The Issue
+## The Issue
 Tags and Images don't have a default visual identity, it would be nice to have a visual representation of the tags and images for usage in CSS or maybe for usage of `og:image`
 
-# History
-- Initial version provides an endpoint under the WP REST API to get the available featured images for categories or tags.
-
-# Usage
+## Usage
 - Install the plugin
 - Access the endpoint at `/wp-json/aggregate-thumbnail-images/v1/category/{id}` or `/wp-json/aggregate-thumbnail-images/v1/tag/{id}` where `{id}` is the ID of the category or tag.
 - Access the endpoint at `/wp-json/aggregate-thumbnail-images/v1/categoryByName/{name}` or `/wp-json/aggregate-thumbnail-images/v1/tagByName/{name}` where `{name}` is the name of the category or tag.
@@ -31,3 +28,15 @@ Tags and Images don't have a default visual identity, it would be nice to have a
     "file_exists": false
   }
 }```
+
+## History
+- Initial version provides an endpoint under the WP REST API to get the available featured images for categories or tags.
+
+## Goals
+- Make those images or allow WordPress users to compose images for tags and categories or both
+- In other words, make that `file_exists` be able to return `true` and mean it.
+- Add some unit testing
+
+## Want to help?
+- Feel free to fork and submit a PR
+- Have a suggestion? Open an issue

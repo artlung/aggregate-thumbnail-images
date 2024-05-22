@@ -31,7 +31,8 @@ Tags and Images don't have a default visual identity, it would be nice to have a
     "path": "https://example.orgwp-content/uploads/aggregate-thumbnail-images/tag_swim2024_600x600.jpg",
     "file_exists": false
   }
-}```
+}
+```
 
 ## History
 - Initial version provides an endpoint under the WP REST API to get the available featured images for categories or tags.

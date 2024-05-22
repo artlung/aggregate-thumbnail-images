@@ -6,6 +6,7 @@ Plugin URI: https://artlung.com/aggregate-thumbnail-images
 Description: Provides REST endpoint to get a list of images for a category or tag
              TODO actually generate these aggregate images to serve as a featured image
              TODO could also be used to generate image for og:image
+             TODO provide a dashboard to see what images exist and help a user composer create them
 Version: 0.5
 Author: artlung
 Author URI: http://artlung.com
@@ -51,7 +52,11 @@ class AggregateThumbnailImages {
         ], 200);
     }
 
-    public static function get_tag( WP_REST_Request $request ): WP_REST_Response
+    /**
+     * @param WP_REST_Request $request
+     * @return WP_REST_Response
+     */
+    public static function get_tag(WP_REST_Request $request ): WP_REST_Response
     {
         $id = $request['id'];
         $images = self::get_images($id, 'tag');
@@ -108,10 +113,12 @@ class AggregateThumbnailImages {
      * @param $taxonomy
      * @param $id
      * @param string $featured_size
-     * @param $type
+     * @param string $type
      * @return string
      */
-    private static function get_target_filename($taxonomy, $id, string $featured_size = self::default_featured_size, $type = self::default_featured_type): string
+    private static function get_target_filename($taxonomy, $id,
+                                                string $featured_size = self::default_featured_size,
+                                                string $type = self::default_featured_type): string
     {
         $slug = '';
         if ($taxonomy === 'category') {

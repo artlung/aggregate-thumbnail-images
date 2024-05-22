@@ -16,6 +16,7 @@ A shell script `aggregate-thumbnail-images.sh` is provided to create a thumbnail
 - - `jq` for parsing JSON
 - - `curl` for making HTTP requests
 - - `convert` from ImageMagick for image manipulation
+- - add a file called `.aggregate-thumbnail-images` in your home directory with the website url 
 
 ## The Issue
 Tags and Images don't have a default visual identity, it would be nice to have a visual representation of the tags and images for usage in CSS or maybe for usage of `og:image`  based on the [Featured Images](https://codex.wordpress.org/Post_Thumbnails) for the posts in that category.

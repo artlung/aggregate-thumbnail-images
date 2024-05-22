@@ -1,1 +1,4 @@
 .idea
+# ignore any images
+*.jpg
+*.jpeg

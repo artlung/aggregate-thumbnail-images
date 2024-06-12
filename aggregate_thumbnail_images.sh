@@ -101,23 +101,14 @@ i=1
 for IMAGE in $IMAGES
 do
   curl -o image$i.jpg $IMAGE;
-  convert image$i.jpg -resize 200x200 image$i.jpg;
+  magick image$i.jpg -resize 200x200 image$i.jpg;
   i=$((i+1))
 done
 
-# create the image
-convert -size 600x600 xc:white \
-  -page +0+0 image1.jpg \
-  -page +200+0 image2.jpg \
-  -page +400+0 image3.jpg \
-  -page +0+200 image4.jpg \
-  -page +200+200 image5.jpg \
-  -page +400+200 image6.jpg \
-  -page +0+400 image7.jpg \
-  -page +200+400 image8.jpg \
-  -page +400+400 image9.jpg \
-  -flatten $FILENAME;
+# create the image by copying each image into a final file
+# using the montage
 
+montage image[1-9].jpg  -geometry 200x200+0+0 $FILENAME
 
 # cleanup
 rm image*.jpg;

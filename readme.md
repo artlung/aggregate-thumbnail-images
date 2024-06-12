@@ -61,6 +61,9 @@ curl -X GET "https://example.org/wp-json/aggregate-thumbnail-images/v1/tag/1" -H
 - Initial version provides an endpoint under the WP REST API to get the available featured images for categories or tags.
 - Added a shell script to consume the api and generate the image based on the output.
 
+### 1.0.1:
+- `convert` no longer works the way it did, ImageMagick prefers `magick` so switched the shell script to use `magick` for `convert` then `montage` to combine the images.
+
 ## Goals
 - Make those images or allow WordPress users to compose images for tags and categories or both
 - In other words, make that `file_exists` be able to return `true` and mean it.
